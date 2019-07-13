@@ -1,0 +1,73 @@
+<DOCTYPE html>
+    <html>
+     <head>
+        <meta charset="utf-8">
+        <title>암호화</title>
+        <link rel = "stylesheet" href="form.css">
+     </head>
+     <body>
+       <form>
+         <fieldset>
+           <legend>암호화</legend>
+               <label>암호키: </label> <input type="text" id="key"><br>
+               <label>암호화 할 문장: </label> <input type="text" id="sentence"><br><br><br>
+                <label style="width: 150px">암호판: </label>
+                <table border=1 id="double_board" style="text-align: center">
+                    <tr>
+                        <td id="1" style="width:40px"></td>
+                        <td id="2" style="width:40px"></td>
+                        <td id="3" style="width:40px"></td>
+                        <td id="4" style="width:40px"></td>
+                        <td id="5" style="width:40px"></td>
+                    </tr>
+                    <tr>
+                        <td id="6"></td>
+                        <td id="7"></td>
+                        <td id="8"></td>
+                        <td id="9"></td>
+                        <td id="10"></td>
+                    </tr>
+                    <tr>
+                        <td id="11"></td>
+                        <td id="12"></td>
+                        <td id="13"></td>
+                        <td id="14"></td>
+                        <td id="15"></td>
+                    </tr>
+                    <tr>
+                        <td id="16"></td>
+                        <td id="17"></td>
+                        <td id="18"></td>
+                        <td id="19"></td>
+                        <td id="20"></td>
+                    </tr>
+                    <tr>
+                        <td id="21"></td>
+                        <td id="22"></td>
+                        <td id="23"></td>
+                        <td id="24"></td>
+                        <td id="25"></td>
+                    </tr>  
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td id="label" style="width: 144px">암호화 할 쌍자: </td>
+                        <td id="ready" class="inner"></td>
+                    </tr>
+                    <tr>
+                        <td id="label" style="width: 144px">암호화된 문장: </td>
+                        <td id="encText" class="inner"></td>
+                    </tr>
+                    <tr>
+                        <td id="label">복호화된 문장: </td>
+                        <td id="decText" class="inner"></td>
+                    </tr>
+                </table>
+               <input type="button" id="submit_d" value="쌍자치환" onclick="init('double')">
+               <input type="button" id="submit_b" value="돌아가기" onclick="location.href='index.html'">
+         </fieldset>
+       </form>
+     </body>
+     <script src="index.js"></script>
+    </html>
